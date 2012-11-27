@@ -13,7 +13,7 @@ set smartindent
 set number
 
 " Auto start Vim's NERDTree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 set guifont=Menlo:h12
 colorscheme ir_black
 
@@ -29,3 +29,5 @@ autocmd BufReadPost *
 \ exe "normal g'\"" |
 \ endif |
 \ endif
+
+au  BufNewFile,BufRead *.jst set syntax=jst
