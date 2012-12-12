@@ -217,5 +217,8 @@ if !exists('b:current_syntax')
 endif
 
 " Underscore.js (JST) templates
-syn region jstBlock containedin=ALL start="<%=" keepend end="%>" contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
-syn region jstBlock containedin=ALL start="<%" keepend end="%>" contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
+syn region jstBlock containedin=ALL start="<%=" keepend end="%>" contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc,@coffeeJS
+syn region jstBlock containedin=ALL start="<%" keepend end="%>" contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc,@coffeeJS
+
+:set expandtab
+:set tabstop=2

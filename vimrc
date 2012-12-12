@@ -14,8 +14,8 @@ set number
 
 " Auto start Vim's NERDTree
 " autocmd vimenter * NERDTree
-set guifont=Menlo:h12
-colorscheme ir_black
+" set guifont=Menlo:h12
+" colorscheme ir_black
 
 " disable toolbar in MacVim
 if has("gui_running")
@@ -31,3 +31,7 @@ autocmd BufReadPost *
 \ endif
 
 au  BufNewFile,BufRead *.jst set syntax=jst
+
+vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
+map <leader>c :CoffeeCompile<CR>
+
