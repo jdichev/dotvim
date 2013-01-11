@@ -214,3 +214,5 @@ hi  link csXmlTag             Keyword
 "
 
 hi Visual  guibg=#888888 guifg=#FFFFFF
+
+set guifont=Menlo\ Regular:h12

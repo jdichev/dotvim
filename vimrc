@@ -12,16 +12,6 @@ set shiftwidth=4
 set smartindent
 set number
 
-" Auto start Vim's NERDTree
-" autocmd vimenter * NERDTree
-" set guifont=Menlo:h12
-" colorscheme ir_black
-
-" disable toolbar in MacVim
-if has("gui_running")
-	set guioptions-=T
-endif
-
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
 \ if ! exists("g:leave_my_cursor_position_alone") |
@@ -35,3 +25,8 @@ au  BufNewFile,BufRead *.jst set syntax=jst
 vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
 map <leader>c :CoffeeCompile<CR>
 
+
+if has('gui_running')
+	set guifont=Menlo:h12
+	colorscheme ir_black
+endif
