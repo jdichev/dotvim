@@ -1,4 +1,17 @@
+call plug#begin()
+  Plug 'preservim/nerdtree'
+  Plug 'sonph/onehalf', { 'rtp': 'vim' }
+call plug#end()
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 syntax on
+set t_Co=256
+" colorscheme onehalflight
+" colorscheme onehalfdark
 
 set number
 set re=2
