@@ -1,7 +1,4 @@
-dotvim
-======
-
-Vim Configuration Folders
+# dotvim
 
 ## Boorkmarks
 

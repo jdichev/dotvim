@@ -1,25 +1,27 @@
-call plug#begin()
-  Plug 'preservim/nerdtree'
-  Plug 'sonph/onehalf', { 'rtp': 'vim' }
-call plug#end()
+" FZF file search
+set rtp+=/opt/homebrew/opt/fzf
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-
+" syntax
 syntax on
-set t_Co=256
-" colorscheme onehalflight
-" colorscheme onehalfdark
 
+" tabs
+set tabstop=2
+set shiftwidth=2
+
+" line numbers
 set number
-set re=2
-set termguicolors
-set colorcolumn=80
 
-" Didsable bold text
-set t_md=
+" no swap files
+set noswapfile
+
+" relative numbers
+set relativenumber
+
+" no odd issues
+set nocompatible
+
+" highlight all search matches
+set hlsearch
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
@@ -31,10 +33,6 @@ set t_md=
 "   Ps = 4  -> steady underline.
 "   Ps = 5  -> blinking bar (xterm).
 "   Ps = 6  -> steady bar (xterm).
-let &t_SI = "\e[6 q"
+let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
 
-let g:netrw_banner=0
-let g:netrw_liststyle=3
-" let g:netrw_browse_split=4
-" let g:netrw_winsize=20
